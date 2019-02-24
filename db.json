@@ -60,7 +60,80 @@
       "attendees": []
     },
     {
-      "id": 9437529,
+      "id": 1,
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "Plantar arboles",
+      "description": "Plantar arboles",
+      "location": "lazaro",
+      "date": "2019-02-22T00:11:00.000Z",
+      "time": "18:00",
+      "attendees": []
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Cat Cabaret",
+      "description": "Yay felines!",
+      "location": "Meow Town",
+      "date": "2019-01-03T21:54:00.000Z",
+      "time": "2:00",
+      "attendees": []
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Kitty Cluster",
+      "description": "Yay cats!",
+      "location": "Catlandia",
+      "date": "2019-01-31T22:09:00.000Z",
+      "time": "7:00",
+      "attendees": []
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Puppy Parade",
+      "description": "Yay pups!",
+      "location": "Puptown ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 5,
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "test",
+      "description": "test",
+      "location": "location",
+      "date": "2019-02-07T00:02:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 6,
       "category": "nature",
       "organizer": {
         "id": "abc123",

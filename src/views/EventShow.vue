@@ -29,25 +29,19 @@
     </ul>
   </div>
 </template>
+
 <script>
-import EventService from "@/services/EventService.js";
+import { mapState } from "vuex";
+
 export default {
   props: ["id"],
-  data() {
-    return {
-      event: {}
-    };
-  },
   async created() {
-    try {
-      const res = await EventService.getEvent(this.id);
-      this.event = res.data;
-    } catch (err) {
-      console.log("ERROR: ", err.response);
-    }
-  }
+    this.$store.dispatch("fetchEvent", this.id);
+  },
+  computed: mapState(["event"])
 };
 </script>
+
 <style scoped>
 .location {
   margin-bottom: 0;
