@@ -60,7 +60,7 @@
       "attendees": []
     },
     {
-      "id": 1,
+      "id": 9437529,
       "category": "nature",
       "organizer": {
         "id": "abc123",
@@ -74,76 +74,101 @@
       "attendees": []
     },
     {
-      "id": 2,
-      "user": {
-        "id": "abc123",
-        "name": "Adam"
-      },
+      "id": 9969118,
       "category": "animal welfare",
-      "organizer": "Adam",
-      "title": "Cat Cabaret",
-      "description": "Yay felines!",
-      "location": "Meow Town",
-      "date": "2019-01-03T21:54:00.000Z",
-      "time": "2:00",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "new",
+      "description": "desc",
+      "location": "asd",
+      "date": "2019-02-07T02:21:00.000Z",
+      "time": "17:00",
       "attendees": []
     },
     {
-      "id": 3,
-      "user": {
+      "id": 9623907,
+      "category": "housing",
+      "organizer": {
         "id": "abc123",
-        "name": "Adam"
+        "name": "Eder Ramirez"
       },
-      "category": "animal welfare",
-      "organizer": "Adam",
-      "title": "Kitty Cluster",
-      "description": "Yay cats!",
-      "location": "Catlandia",
-      "date": "2019-01-31T22:09:00.000Z",
+      "title": "asdasd",
+      "description": "asdasd",
+      "location": "asdasd",
+      "date": "2019-02-08T02:23:00.000Z",
+      "time": "18:00",
+      "attendees": []
+    },
+    {
+      "id": 3810060,
+      "category": "community",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "asdasd",
+      "description": "asdasd",
+      "location": "asdasd",
+      "date": "2019-02-08T02:24:00.000Z",
       "time": "7:00",
       "attendees": []
     },
     {
-      "id": 4,
-      "user": {
-        "id": "abc123",
-        "name": "Adam"
-      },
-      "category": "animal welfare",
-      "organizer": "Adam",
-      "title": "Puppy Parade",
-      "description": "Yay pups!",
-      "location": "Puptown ",
-      "date": "2019-02-02T23:27:00.000Z",
-      "time": "1:00",
-      "attendees": []
-    },
-    {
-      "id": 5,
+      "id": 6106788,
       "category": "nature",
       "organizer": {
         "id": "abc123",
         "name": "Eder Ramirez"
       },
-      "title": "test",
-      "description": "test",
-      "location": "location",
-      "date": "2019-02-07T00:02:00.000Z",
-      "time": "15:00",
+      "title": "1",
+      "description": "asasd",
+      "location": "asda",
+      "date": "2019-02-06T02:26:00.000Z",
+      "time": "17:00",
       "attendees": []
     },
     {
-      "id": 6,
-      "category": "nature",
+      "id": 699781,
+      "category": "community",
       "organizer": {
         "id": "abc123",
         "name": "Eder Ramirez"
       },
-      "title": "Plantar arboles",
-      "description": "Plantar arboles",
-      "location": "lazaro",
-      "date": "2019-02-22T00:11:00.000Z",
-      "time": "18:00",
+      "title": "2",
+      "description": "asd",
+      "location": "asd",
+      "date": "2019-02-06T02:28:00.000Z",
+      "time": "17:00",
+      "attendees": []
+    },
+    {
+      "id": 8614215,
+      "category": "housing",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "3",
+      "description": "asd",
+      "location": "asd",
+      "date": "2019-02-07T02:28:00.000Z",
+      "time": "16:00",
+      "attendees": []
+    },
+    {
+      "id": 1048393,
+      "category": "food",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "12",
+      "description": "asd",
+      "location": "asd",
+      "date": "2019-02-07T02:29:00.000Z",
+      "time": "16:00",
       "attendees": []
     }
   ]

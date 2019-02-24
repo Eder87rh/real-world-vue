@@ -29,25 +29,39 @@ export const mutations = {
 };
 
 export const actions = {
-  async createEvent({ commit }, event) {
+  async createEvent({ commit, dispatch }, event) {
     try {
       await EventService.postEvent(event);
       commit("ADD_EVENT", event);
+      const notification = {
+        type: "success",
+        message: "Your event has been created!"
+      };
+      dispatch("notification/add", notification, { root: true });
     } catch (error) {
-      console.log("TCL: }catch -> error", error);
+      const notification = {
+        type: "error",
+        message: "There was a problem creating your event: " + error.message
+      };
+      dispatch("notification/add", notification, { root: true });
+      throw error;
     }
   },
-  async fetchEvents({ commit }, { perPage, page }) {
+  async fetchEvents({ commit, dispatch }, { perPage, page }) {
     try {
       const response = await EventService.getEvents(perPage, page);
       console.log("Total events are " + response.headers["x-total-count"]);
       commit("SET_EVENTS", response.data);
       commit("SET_EVENTS_TOTAL", parseInt(response.headers["x-total-count"]));
     } catch (err) {
-      console.log("TCL: }catch -> err", err);
+      const notification = {
+        type: "error",
+        message: "There was a problem fetchin events: " + err.message
+      };
+      dispatch("notification/add", notification, { root: true });
     }
   },
-  async fetchEvent({ commit, getters }, id) {
+  async fetchEvent({ commit, getters, dispatch }, id) {
     let event = getters.getEventById(id);
 
     if (event) {
@@ -57,7 +71,11 @@ export const actions = {
         const res = await EventService.getEvent(id);
         commit("SET_EVENT", res.data);
       } catch (err) {
-        console.log("ERROR: ", err.response);
+        const notification = {
+          type: "error",
+          message: "There was a problem fetchin event: " + err.message
+        };
+        dispatch("notification/add", notification, { root: true });
       }
     }
   }

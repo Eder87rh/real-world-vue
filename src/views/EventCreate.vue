@@ -55,7 +55,7 @@ export default {
     DatePicker
   },
   data() {
-    const times = [];
+    let times = [];
     for (let i = 1; i <= 24; i++) {
       times.push(i + ":00");
     }
