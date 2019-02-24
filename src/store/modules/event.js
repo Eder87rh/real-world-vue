@@ -70,6 +70,7 @@ export const actions = {
       try {
         const res = await EventService.getEvent(id);
         commit("SET_EVENT", res.data);
+        return res;
       } catch (err) {
         const notification = {
           type: "error",
