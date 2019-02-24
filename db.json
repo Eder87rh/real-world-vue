@@ -44,6 +44,34 @@
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
       "attendees": []
+    },
+    {
+      "id": 1956907,
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "test",
+      "description": "test",
+      "location": "location",
+      "date": "2019-02-07T00:02:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 9437529,
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "Plantar arboles",
+      "description": "Plantar arboles",
+      "location": "lazaro",
+      "date": "2019-02-22T00:11:00.000Z",
+      "time": "18:00",
+      "attendees": []
     }
   ]
 }
