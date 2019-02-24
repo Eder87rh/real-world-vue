@@ -50,6 +50,7 @@
 
 <script>
 import DatePicker from "vuejs-datepicker";
+import NProgress from "nprogress";
 export default {
   components: {
     DatePicker
@@ -67,6 +68,7 @@ export default {
   },
   methods: {
     async createEvent() {
+      NProgress.start();
       try {
         await this.$store.dispatch("event/createEvent", this.event);
         this.$router.push({
@@ -76,6 +78,7 @@ export default {
         this.event = this.createFreshEventObject();
       } catch (error) {
         console.log(error);
+        NProgress.done();
       }
     },
     createFreshEventObject() {

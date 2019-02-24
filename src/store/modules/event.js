@@ -10,7 +10,8 @@ export const state = {
     { id: 4, text: "...", done: false }
   ],
   eventsTotal: 0,
-  event: {}
+  event: {},
+  perPage: 3
 };
 
 export const mutations = {
@@ -47,12 +48,13 @@ export const actions = {
       throw error;
     }
   },
-  async fetchEvents({ commit, dispatch }, { perPage, page }) {
+  async fetchEvents({ commit, dispatch, state }, { page }) {
     try {
-      const response = await EventService.getEvents(perPage, page);
+      const response = await EventService.getEvents(state.perPage, page);
       console.log("Total events are " + response.headers["x-total-count"]);
       commit("SET_EVENTS", response.data);
       commit("SET_EVENTS_TOTAL", parseInt(response.headers["x-total-count"]));
+      return response.data;
     } catch (err) {
       const notification = {
         type: "error",
