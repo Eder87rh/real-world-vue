@@ -184,6 +184,20 @@
       "date": "2019-02-13T05:16:00.000Z",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 7308944,
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Eder Ramirez"
+      },
+      "title": "fdgdsgf",
+      "description": "sadasd",
+      "location": "asdasdasd",
+      "date": "2019-02-01T23:26:00.000Z",
+      "time": "12:00",
+      "attendees": []
     }
   ]
 }
