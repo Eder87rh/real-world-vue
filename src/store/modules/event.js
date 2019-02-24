@@ -63,24 +63,20 @@ export const actions = {
       dispatch("notification/add", notification, { root: true });
     }
   },
-  async fetchEvent({ commit, getters, dispatch }, id) {
+  async fetchEvent({ commit, getters, state }, id) {
+    if (id == state.event.id) {
+      return state.event;
+    }
+
     let event = getters.getEventById(id);
 
     if (event) {
       commit("SET_EVENT", event);
       return event;
     } else {
-      try {
-        const res = await EventService.getEvent(id);
-        commit("SET_EVENT", res.data);
-        return res.data;
-      } catch (err) {
-        const notification = {
-          type: "error",
-          message: "There was a problem fetchin event: " + err.message
-        };
-        dispatch("notification/add", notification, { root: true });
-      }
+      const res = await EventService.getEvent(id);
+      commit("SET_EVENT", res.data);
+      return res.data;
     }
   }
 };
