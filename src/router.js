@@ -31,7 +31,6 @@ const router = new Router({
           to.params.event = event;
           next();
         } catch (error) {
-          console.log("TCL: }catch -> error", error);
           if (error.response && error.response.status === 404) {
             next({ name: "404", params: { resource: "event" } });
           } else {
